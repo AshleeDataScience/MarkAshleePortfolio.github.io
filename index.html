@@ -152,33 +152,11 @@
 
 
 						</article>
-						
-						<?php
-						if ($_SERVER["REQUEST_METHOD"] == "POST") {
-							$name = $_POST["name"];
-							$email = $_POST["email"];
-							$message = $_POST["message"];
-							
-							// Send email
-							$to = "markmori74@gmail.com";
-							$subject = "Contact Form Submission";
-							$body = "Name: $name\nEmail: $email\n\n$message";
-							$headers = "From: $email";
-							
-							if (mail($to, $subject, $body, $headers)) {
-								echo "Thank you! Your message has been sent.";
-							} else {
-								echo "Error: Unable to send email. Please try again later.";
-							}
-						} else {
-							echo "Error: Invalid request.";
-						}
-						?>
 									
 					<!-- Contact -->
 			<article id="contact">
 				<h2 class="major">Contact</h2>
-				<form method="post" action="send_email.php">
+				<!--<form method="post" action="send_email.php">
 					<div class="fields">
 						<div class="field half">
 							<label for="name">Name</label>
@@ -197,7 +175,7 @@
 						<li><input type="submit" value="Send Message" class="primary" /></li>
 						<li><input type="reset" value="Reset" /></li>
 					</ul>
-				</form>
+				</form>-->
 				<ul class="icons">
 					<li><a href="https://www.facebook.com/eLm0rS" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="https://www.linkedin.com/in/markashleemori/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
